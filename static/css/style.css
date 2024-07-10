@@ -1,7 +1,7 @@
 /*used color palette: https://flatuicolors.com/palette/es*/
 body {
   font-family: sans-serif;
-  background-color: #ff793f;
+  background-color: #aaa69d;
 }
 
 header {
@@ -18,7 +18,7 @@ p {
 
 .highlight{
   box-shadow: 2px 2px 6px;
-  float: right;
+  float: left;
   margin-left: 100px;
   margin-right: 40px;
 }

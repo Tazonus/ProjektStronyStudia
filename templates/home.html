@@ -6,9 +6,29 @@
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
+  <div class="articlewraper">
     <header>
-        <h1>Strona Główna</h1>
+      <div class="highlight">
+        <a href="/">Główna</a>        
+        <a href="/math">Matma</a>
+        <a href="/project">Projekt</a>
+        <a href="/about">Zespół</a>
+      </div>
+      <h1>Strona Główna</h1>
     </header>
-    <p>To jest strona główna.</p>
+    <p>Spis treści:</p>
+    <p><a href="/math">matma</a></p>
+    <p><a href="/project">Projekt</a></p>
+    <p><a href="/about">Zespół</a></p>
+    <form action="/send-message" method="POST">
+      <label for="name">Imię:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Wiadomość:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <button type="submit">Wyślij</button>
+    </form>
+  </div>
 </body>
 </html>
