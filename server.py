@@ -12,7 +12,7 @@ def about():
 def project():
     return render_template('project.html')
 @app.route('/math')
-def project():
+def math():
     return render_template('math.html')
 
 if __name__ == '__main__':
