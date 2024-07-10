@@ -16,17 +16,23 @@
       </div>
       <h1>Strona Główna</h1>
     </header>
+
     <div class="contentwraper">
       <p>Spis treści:</p>
       <p><a href="/math">matma</a></p>
       <p><a href="/project">Projekt</a></p>
       <p><a href="/about">Zespół</a></p>
 
-      <form action="/" method="POST">
-        <label for="word">Słowo:</label>
-        <input type="text" id="word" name="word" required>
-        <button type="submit">Wyślij</button>
-      </form>
+    <form id="imageForm">
+      <label for="message">Wiadomość:</label>
+      <textarea id="message" name="message" rows="4" ></textarea>
+      <button type="submit" id="fetch_button">Wyślij</button>
+    </form>
+
+    <script src="../static/javascript/client.js"></script>
+    <div class="image_wrapper">
+    </div>
+
     </div>
   </div>
 </body>
