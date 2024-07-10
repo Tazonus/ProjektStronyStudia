@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matma</title>
+  <title>Szeregi</title>
   <link rel="stylesheet" href="/static/css/style.css">
   <script id="MathJax-script" async
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
@@ -13,18 +13,90 @@
     <header>
       <div class="highlightright">
         <a href="/">Główna</a>        
-        <a href="/math">Matma</a>
+        <a href="/math">Szeregi</a>
         <a href="/project">Projekt</a>
         <a href="/about">Zespół</a>
       </div>
-      <h1>Matma</h1>
+      <h1>Szeregi</h1>
     </header>
     <div class="contentwraper">
-    <p>Tu będzie przedstawienie matmy.</p>
-    <p>
-        When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-        \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
-      </p>
+    <h1>Czym jest szereg zbieżny?</h1>
+    <h3>
+        Szereg to innymi słowy suma elementów ciągu, Możemy powiedzieć że szereg jest zbieżny, kiedy suma wszystkich wyrazów ciągu zbiega się do skończonej wartości, np. 
+        \[
+        \sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}.
+        \]
+    </h3>
+    <h1>Kryteria zbieżności:</h1>
+    <h2>- Kryterium porównawcze</h2>
+    <h3 class="contentwraper">
+        Kryterium porównawcze jest najprostrzym sposobem badania zbieżności. Polega na porównaniu dwóch szeszeregów, z których jednego zbieżność już znamy. 
+    <br>
+        bierzemy pod uwagę dwa szeregi o wyrazach dodatnich:
+        \[
+        \sum_{n=1}^{\infty} a_n \quad \text{oraz} \quad \sum_{n=1}^{\infty} b_n.
+        \]
+        
+        Jeżeli dla \( n \):
+        \[
+        a_n \leq b_n,
+        \]
+        to: <br><br>
+            ze zbieżności szeregu \( \sum_{n=1}^{\infty} b_n \) wynika zbieżność szeregu \( \sum_{n=1}^{\infty} a_n,\) <br>ponieważ \(a_n \leq b_n < \infty \)<br> <br>
+            z rozbieżności szeregu \( \sum_{n=1}^{\infty} a_n \) wynika rozbieżność szeregu \( \sum_{n=1}^{\infty} b_n \).
+            <br>ponieważ \( \infty < a_n \leq b_n \), 
+    </h3>
+    <h2>- Kryterium Cauchyego</h2>
+    <h3 class="contentwraper">
+        Kryterium Cauchy'ego używa pierwiastka do potęgni n-tej dlatego najlepiej się sprawdza przy potęgach n-tego stopnia.
+        <br>
+        Dany jest szereg liczbowy o wyrazach dodatnich:
+        \[
+        \sum_{n=1}^{\infty} a_n.
+        \]
+        
+        Jeżeli: <br><br>
+        \(
+        \lim_{n \rightarrow \infty} \sqrt[n]{a_n} < 1,
+        \)
+        to szereg \( \sum_{n=1}^{\infty} a_n \) jest zbieżny.<br><br>
+    
+        \(
+        \lim_{n \rightarrow \infty} \sqrt[n]{a_n} > 1,
+        \)
+        to szereg \( \sum_{n=1}^{\infty} a_n \) jest rozbieżny.<br><br>
+    
+        \(
+        \lim_{n \rightarrow \infty} \sqrt[n]{a_n} = 1,
+        \)
+        to zbieżność nie jest rozstrzygnięta.
+    </h3>
+    <h2>- Kryterium D'Alemberta</h2>
+    <h3 class="contentwraper">
+        Kryterium D'Alemberta przydaje się między innymi przy silniach
+    <br>
+        Dany jest szereg o wyrazach dodatnich:
+        \[
+        \sum_{n=1}^{\infty} a_n.
+        \]
+
+        Jeżeli: <br><br>
+        \(
+        \lim_{n \rightarrow \infty} \frac{a_{n+1}}{a_n} < 1,
+        \)
+        to szereg jest zbieżny.<br><br>
+ 
+        \(
+        \lim_{n \rightarrow \infty} \frac{a_{n+1}}{a_n} > 1,
+        \)
+        to szereg jest rozbieżny.<br><br>
+ 
+        \(
+        \lim_{n \rightarrow \infty} \frac{a_{n+1}}{a_n} = 1,
+        \)
+        to zbieżność nie jest rozstrzygnięta.
+    
+    </h3>
     </div>
   </div>
 </body>
